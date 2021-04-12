@@ -5,7 +5,7 @@ We show **improved representations** help extrapolation on the n-body physical r
 The n-body problem asks a neural network to predict how n stars in a physical system evolves according to physics laws. That is, we train neural networks to predict properties of future states of each star in terms of next frames, e.g., 0.001 seconds.
 
 
-## Reproducing results in the paper
+## Reproducing results with one command
 We also include a script file [`reproduce.sh`](./reproduce.sh) to repoduce the results on extrapolation settings for the n-body experiments. To be more specific,
 ```
 bash ./reproduce.sh
