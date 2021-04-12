@@ -4,7 +4,7 @@ We provide instructions to reproduce the following categories of experiments on 
 - Learning simple nonlinear tasks
 - Computation of R^2 of the learned functions (Theorem 1).
 - Learning linear tasks with different data geometry (Theorem 2)
-- Exact computation with neural tangent kernel (Lemma 1).
+- Exact computation in neural tangent kernel regime (Lemma 1). The 3 experiments above are in regular regimes.
 
 
 ## Data generation
