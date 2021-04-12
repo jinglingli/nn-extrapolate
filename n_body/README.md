@@ -4,6 +4,15 @@ We show **improved representations** help extrapolation on the n-body physical r
 
 The n-body problem asks a neural network to predict how n stars in a physical system evolves according to physics laws. That is, we train neural networks to predict properties of future states of each star in terms of next frames, e.g., 0.001 seconds.
 
+
+## Reproducing results in the paper
+We also include a script file [`reproduce.sh`](./reproduce.sh) to repoduce the results on extrapolation settings for the n-body experiments. To be more specific,
+```
+bash ./reproduce.sh
+```
+reproduces the results with feature-engineered input representations (pink bars) in Figure 6(b). Continue reading below for more details.
+
+
 ## Data Generation
 We sample 100 videos of 3-body system evolution, each with 500 rollout, i.e., time steps. We consider the orbit situation: there exists a huge center star and several other stars. Feel free to refer to appendix C.7 for more of our dataset details.
 
@@ -41,10 +50,3 @@ trains a GNN on `n_body_extrapolate_mass.pickle` with normal input representatio
 
 
 The training logs will be under the `results` folder.
-
-## Reproducing results in the paper
-We also include a script file [`reproduce.sh`](./reproduce.sh) to repoduce the results on extrapolation settings for the n-body experiments. To be more specific,
-```
-bash ./reproduce.sh
-```
-reproduces the results with feature-engineered input representations (pink bars) in Figure 6(b).
