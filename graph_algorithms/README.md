@@ -3,6 +3,14 @@ We validate that **linear algorithmic alignment** helps extrapolation on two Dyn
 - Max Degree 
 - Shortest path 
 
+
+## Reproducing results with one command
+We include a script file [`reproduce.sh`](./reproduce.sh) to repoduce the results on extrapolation settings for the graph algorithm experiments in the paper. To be more specific,
+```
+bash ./reproduce.sh
+```
+reproduces the results (pink bars) in Figure 6(a). Continue reading below for more details.
+
 # Maximum Degree
 
 ### Data Generation
@@ -72,9 +80,3 @@ CUDA_VISBILE_DEVICES=0 python main.py --model=GNN_E --n_iter=3 --weight=weight -
 Note that:
 - There are edge features,  so the model should be set to `GNN_E`, and the flag `--weight` should be turned on (i.e., `--weight=weight`).
 
-## Reproducing results in the paper
-We also include a script file [`reproduce.sh`](./reproduce.sh) to repoduce the results on extrapolation settings for the above graph experiments. To be more specific,
-```
-bash ./reproduce.sh
-```
-reproduces the results (pink bars) in Figure 6(a).
