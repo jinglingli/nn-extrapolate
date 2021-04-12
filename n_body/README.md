@@ -6,11 +6,11 @@ The n-body problem asks a neural network to predict how n stars in a physical sy
 
 
 ## Reproducing results with one command
-We also include a script file [`reproduce.sh`](./reproduce.sh) to repoduce the results on extrapolation settings for the n-body experiments. To be more specific,
+We include a script file [`reproduce.sh`](./reproduce.sh) to repoduce the results on extrapolation settings for the n-body experiments. To be more specific,
 ```
 bash ./reproduce.sh
 ```
-reproduces the results with feature-engineered input representations (pink bars) in Figure 6(b). Continue reading below for more details.
+reproduces the results with feature-engineered input representations (pink bars) in Figure 6(b) of the paper. Continue reading below for more details.
 
 
 ## Data Generation
