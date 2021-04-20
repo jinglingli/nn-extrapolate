@@ -1,4 +1,4 @@
-# How Neural Networks Extrapolate 
+# How Neural Networks Extrapolate: From Feedforward to Graph Neural Networks
 
 This repository is the PyTorch implementation of the experiments in the following paper: 
 
