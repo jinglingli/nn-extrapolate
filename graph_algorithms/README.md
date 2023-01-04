@@ -56,7 +56,7 @@ Note that:
 Run the following script to generate datasets.
 
 ```
-CUDA_VISBILE_DEVICES=0 python main.py --model=GNN --n_iter=2 --weight=None --lr=0.01 --fc_output_layer=1 --mlp_layer=2 --hidden_dim=256 --batch_size=64  --graph_pooling_type=max --neighbor_pooling_type=sum --epochs=250 --data=maxdeg_uniform_general_Ndim3_Train_V20_30_C5_Test_V50_100_C10.pickle 
+python sample_scripts/sample_shortest_uniform.py
 ```
 
 The names of the data files are of the form:
